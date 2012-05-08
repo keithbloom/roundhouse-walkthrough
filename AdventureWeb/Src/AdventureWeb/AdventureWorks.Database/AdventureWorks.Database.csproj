@@ -43,10 +43,53 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="db\" />
+    <Folder Include="db\up\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="deployment\LOCAL.DBDeployment.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db\functions\dbo.ufnGetAccountingEndDate.sql" />
+    <Content Include="db\functions\dbo.ufnGetAccountingStartDate.sql" />
+    <Content Include="db\functions\dbo.ufnGetContactInformation.sql" />
+    <Content Include="db\functions\dbo.ufnGetDocumentStatusText.sql" />
+    <Content Include="db\functions\dbo.ufnGetProductDealerPrice.sql" />
+    <Content Include="db\functions\dbo.ufnGetProductListPrice.sql" />
+    <Content Include="db\functions\dbo.ufnGetProductStandardCost.sql" />
+    <Content Include="db\functions\dbo.ufnGetPurchaseOrderStatusText.sql" />
+    <Content Include="db\functions\dbo.ufnGetSalesOrderStatusText.sql" />
+    <Content Include="db\functions\dbo.ufnGetStock.sql" />
+    <Content Include="db\functions\dbo.ufnLeadingZeros.sql" />
+    <Content Include="db\sprocs\dbo.uspGetBillOfMaterials.sql" />
+    <Content Include="db\sprocs\dbo.uspGetEmployeeManagers.sql" />
+    <Content Include="db\sprocs\dbo.uspGetManagerEmployees.sql" />
+    <Content Include="db\sprocs\dbo.uspGetWhereUsedProductID.sql" />
+    <Content Include="db\sprocs\dbo.uspLogError.sql" />
+    <Content Include="db\sprocs\dbo.uspPrintError.sql" />
+    <Content Include="db\sprocs\dbo.uspSearchCandidateResumes.sql" />
+    <Content Include="db\sprocs\HumanResources.uspUpdateEmployeeHireInfo.sql" />
+    <Content Include="db\sprocs\HumanResources.uspUpdateEmployeeLogin.sql" />
+    <Content Include="db\sprocs\HumanResources.uspUpdateEmployeePersonalInfo.sql" />
+    <Content Include="db\views\HumanResources.vEmployee.sql" />
+    <Content Include="db\views\HumanResources.vEmployeeDepartment.sql" />
+    <Content Include="db\views\HumanResources.vEmployeeDepartmentHistory.sql" />
+    <Content Include="db\views\HumanResources.vJobCandidate.sql" />
+    <Content Include="db\views\HumanResources.vJobCandidateEducation.sql" />
+    <Content Include="db\views\HumanResources.vJobCandidateEmployment.sql" />
+    <Content Include="db\views\Person.vAdditionalContactInfo.sql" />
+    <Content Include="db\views\Person.vStateProvinceCountryRegion.sql" />
+    <Content Include="db\views\Production.vProductAndDescription.sql" />
+    <Content Include="db\views\Production.vProductModelCatalogDescription.sql" />
+    <Content Include="db\views\Production.vProductModelInstructions.sql" />
+    <Content Include="db\views\Purchasing.vVendorWithAddresses.sql" />
+    <Content Include="db\views\Purchasing.vVendorWithContacts.sql" />
+    <Content Include="db\views\Sales.vIndividualCustomer.sql" />
+    <Content Include="db\views\Sales.vPersonDemographics.sql" />
+    <Content Include="db\views\Sales.vSalesPerson.sql" />
+    <Content Include="db\views\Sales.vSalesPersonSalesByFiscalYears.sql" />
+    <Content Include="db\views\Sales.vStoreWithAddresses.sql" />
+    <Content Include="db\views\Sales.vStoreWithContacts.sql" />
+    <Content Include="db\views\Sales.vStoreWithDemographics.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
