@@ -1,8 +1,4 @@
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.ufnGetDocumentStatusText')) DROP FUNCTION dbo.ufnGetDocumentStatusText
-GO
-
-
-CREATE FUNCTION [dbo].[ufnGetDocumentStatusText](@Status [tinyint])
+ALTER FUNCTION [dbo].[ufnGetDocumentStatusText](@Status [tinyint])
 RETURNS [nvarchar](16) 
 AS 
 -- Returns the sales order status text representation for the status value.

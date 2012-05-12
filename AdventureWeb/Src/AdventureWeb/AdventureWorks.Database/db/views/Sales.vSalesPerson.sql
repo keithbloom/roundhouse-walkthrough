@@ -12,7 +12,7 @@ PRINT 'Updating ' + @Type + ' ' + @Schema + '.' + @Name
 GO
 
 
-CREATE VIEW [Sales].[vSalesPerson] 
+ALTER VIEW [Sales].[vSalesPerson] 
 AS 
 SELECT 
     s.[BusinessEntityID]

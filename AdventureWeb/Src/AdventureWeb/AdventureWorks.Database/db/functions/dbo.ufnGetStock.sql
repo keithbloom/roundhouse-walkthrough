@@ -1,8 +1,4 @@
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.ufnGetStock')) DROP FUNCTION dbo.ufnGetStock
-GO
-
-
-CREATE FUNCTION [dbo].[ufnGetStock](@ProductID [int])
+ALTER FUNCTION [dbo].[ufnGetStock](@ProductID [int])
 RETURNS [int] 
 AS 
 -- Returns the stock level for the product. This function is used internally only

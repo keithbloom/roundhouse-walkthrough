@@ -1,8 +1,4 @@
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.ufnGetPurchaseOrderStatusText')) DROP FUNCTION dbo.ufnGetPurchaseOrderStatusText
-GO
-
-
-CREATE FUNCTION [dbo].[ufnGetPurchaseOrderStatusText](@Status [tinyint])
+ALTER FUNCTION [dbo].[ufnGetPurchaseOrderStatusText](@Status [tinyint])
 RETURNS [nvarchar](15) 
 AS 
 -- Returns the sales order status text representation for the status value.

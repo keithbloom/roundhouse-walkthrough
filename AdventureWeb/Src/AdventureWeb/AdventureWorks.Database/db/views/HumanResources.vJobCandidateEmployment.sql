@@ -12,7 +12,7 @@ PRINT 'Updating ' + @Type + ' ' + @Schema + '.' + @Name
 GO
 
 
-CREATE VIEW [HumanResources].[vJobCandidateEmployment] 
+ALTER VIEW [HumanResources].[vJobCandidateEmployment] 
 AS 
 SELECT 
     jc.[JobCandidateID] 
