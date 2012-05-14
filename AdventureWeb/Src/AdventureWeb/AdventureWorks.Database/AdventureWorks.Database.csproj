@@ -59,7 +59,6 @@
     <Content Include="db\functions\dbo.ufnGetPurchaseOrderStatusText.sql" />
     <Content Include="db\functions\dbo.ufnGetSalesOrderStatusText.sql" />
     <Content Include="db\functions\dbo.ufnGetStock.sql" />
-    <Content Include="db\functions\dbo.ufnLeadingZeros.sql" />
     <Content Include="db\sprocs\dbo.uspGetBillOfMaterials.sql" />
     <Content Include="db\sprocs\dbo.uspGetEmployeeManagers.sql" />
     <Content Include="db\sprocs\dbo.uspGetManagerEmployees.sql" />

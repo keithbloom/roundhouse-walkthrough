@@ -1,8 +1,4 @@
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.ufnGetProductStandardCost')) DROP FUNCTION dbo.ufnGetProductStandardCost
-GO
-
-
-CREATE FUNCTION [dbo].[ufnGetProductStandardCost](@ProductID [int], @OrderDate [datetime])
+ALTER FUNCTION [dbo].[ufnGetProductStandardCost](@ProductID [int], @OrderDate [datetime])
 RETURNS [money] 
 AS 
 -- Returns the standard cost for the product on a specific date.

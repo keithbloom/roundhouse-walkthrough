@@ -12,7 +12,7 @@ PRINT 'Updating ' + @Type + ' ' + @Schema + '.' + @Name
 GO
 
 
-CREATE VIEW [Production].[vProductAndDescription] 
+ALTER VIEW [Production].[vProductAndDescription] 
 WITH SCHEMABINDING 
 AS 
 -- View (indexed or standard) to display products and product descriptions by language.

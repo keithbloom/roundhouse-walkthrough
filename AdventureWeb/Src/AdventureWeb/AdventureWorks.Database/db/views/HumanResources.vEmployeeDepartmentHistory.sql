@@ -12,7 +12,7 @@ PRINT 'Updating ' + @Type + ' ' + @Schema + '.' + @Name
 GO
 
 
-CREATE VIEW [HumanResources].[vEmployeeDepartmentHistory] 
+ALTER VIEW [HumanResources].[vEmployeeDepartmentHistory] 
 AS 
 SELECT 
     e.[BusinessEntityID] 

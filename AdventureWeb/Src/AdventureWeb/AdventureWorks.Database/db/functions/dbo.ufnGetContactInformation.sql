@@ -1,8 +1,5 @@
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.ufnGetContactInformation')) DROP FUNCTION dbo.ufnGetContactInformation
-GO
 
-
-CREATE FUNCTION [dbo].[ufnGetContactInformation](@PersonID int)
+ALTER FUNCTION [dbo].[ufnGetContactInformation](@PersonID int)
 RETURNS @retContactInformation TABLE 
 (
     -- Columns returned by the function

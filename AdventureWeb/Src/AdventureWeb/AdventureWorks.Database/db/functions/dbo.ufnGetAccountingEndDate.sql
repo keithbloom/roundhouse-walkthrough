@@ -1,8 +1,5 @@
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.ufnGetAccountingEndDate')) DROP FUNCTION dbo.ufnGetAccountingEndDate
-GO
 
-
-CREATE FUNCTION [dbo].[ufnGetAccountingEndDate]()
+ALTER FUNCTION [dbo].[ufnGetAccountingEndDate]()
 RETURNS [datetime] 
 AS 
 BEGIN

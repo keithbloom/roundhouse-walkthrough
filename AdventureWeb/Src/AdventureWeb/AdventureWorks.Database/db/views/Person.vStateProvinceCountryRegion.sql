@@ -12,7 +12,7 @@ PRINT 'Updating ' + @Type + ' ' + @Schema + '.' + @Name
 GO
 
 
-CREATE VIEW [Person].[vStateProvinceCountryRegion] 
+ALTER VIEW [Person].[vStateProvinceCountryRegion] 
 WITH SCHEMABINDING 
 AS 
 SELECT 

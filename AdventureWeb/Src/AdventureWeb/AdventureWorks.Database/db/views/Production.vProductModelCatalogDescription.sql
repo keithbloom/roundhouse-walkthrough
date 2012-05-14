@@ -12,7 +12,7 @@ PRINT 'Updating ' + @Type + ' ' + @Schema + '.' + @Name
 GO
 
 
-CREATE VIEW [Production].[vProductModelCatalogDescription] 
+ALTER VIEW [Production].[vProductModelCatalogDescription] 
 AS 
 SELECT 
     [ProductModelID] 

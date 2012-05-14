@@ -1,10 +1,5 @@
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.ufnGetProductDealerPrice')) DROP FUNCTION dbo.ufnGetProductDealerPrice
-GO
 
-
-
-
-CREATE FUNCTION [dbo].[ufnGetProductDealerPrice](@ProductID [int], @OrderDate [datetime])
+ALTER FUNCTION [dbo].[ufnGetProductDealerPrice](@ProductID [int], @OrderDate [datetime])
 RETURNS [money] 
 AS 
 -- Returns the dealer price for the product on a specific date.
