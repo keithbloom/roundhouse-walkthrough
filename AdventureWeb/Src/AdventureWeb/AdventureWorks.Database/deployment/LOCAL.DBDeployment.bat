@@ -3,7 +3,7 @@
 
 SET DIR=%~d0%~p0%
 
-SET database.name="AdventureWorks"
+SET database.name="AdventureWorks2008R2"
 SET sql.files.directory="..\db\"
 SET server.database=".\Sql2008R2"
 SET rh.path= "%DIR%..\..\..\..\Tools\RoundhousE\console\"
